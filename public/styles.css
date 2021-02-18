@@ -1,0 +1,129 @@
+body {
+    background-color: #f2a154;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+}
+
+/* NAV BAR */
+.nav-list {
+    list-style: none;
+    color: white;
+    margin-top: 5px;
+}
+
+.nav-list a {
+    margin: auto 45px;
+}
+
+/* Card Component */
+
+.card-container {
+    width: 80%;
+    margin: 1rem auto 4rem;
+}
+
+.card {
+    margin: 2rem 20px;
+    height: 100%;
+    background-color: #ffefa1;
+}
+
+.card-body {
+    text-align: center;
+    background-color: #faf3e0;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    height: 5rem;
+}
+
+.col {
+    margin-top: 5rem;
+}
+
+
+.card-text {
+    font-size: 15px;
+    height: 8rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+}
+
+/* Image */
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+/* About Component */
+
+.aboutParagraph {
+    display: inline-block;
+    height: 100%;
+}
+
+/* Cart Component */
+.cartIcon {
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    color: black;
+}
+
+.cartIcon:hover {
+    color: #5b5b5b;
+}
+
+.cartIcon p {
+    position: fixed;
+    bottom: 40px;
+    right: 1.4rem;
+    font-size: 30px;
+}
+
+/* Payment Component */
+
+.payment-container {
+    margin: 5rem 4rem;
+    text-align: center;
+}
+
+.payment-title {
+    font-size: 80px;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.btn-container {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-container {
+    width: 45%;
+    margin: 0 auto 10px auto;
+    line-height: 2;
+}
