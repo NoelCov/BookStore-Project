@@ -5,16 +5,14 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Header(){
     return (
-      <div>
         <nav className="navbar navbar-dark bg-dark">
           <h1 className="title">Noel's Book Store</h1>
             <ul className="nav-list">
-              <a href="https://twitter.com/No3l_Codes" style={{color: "white", fontSize: "15"}} target="_blank"><TwitterIcon /></a>
-              <a href="https://github.com/NoelCov" style={{color: "white", fontSize: "15"}} target="_blank"><GitHubIcon /></a>
-              <a href="https://www.instagram.com/no3lcodes/" style={{color: "white", fontSize: "15px"}} target="_blank"><InstagramIcon /></a>
+              <a href="https://twitter.com/No3l_Codes" className="nav-list-tag" style={{color: "white"}} target="_blank"><TwitterIcon /></a>
+              <a href="https://github.com/NoelCov" className="nav-list-tag" style={{color: "white"}} target="_blank"><GitHubIcon /></a>
+              <a href="https://www.instagram.com/no3lcodes/" className="nav-list-tag" style={{color: "white"}} target="_blank"><InstagramIcon /></a>
             </ul>
         </nav>
-      </div>
     )
 };
 

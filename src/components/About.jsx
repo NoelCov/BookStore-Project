@@ -16,7 +16,7 @@ function About(props) {
 
     return (
         <div>
-            <span className="aboutParagraph" >
+            <span className="about-paragraph" >
             {props.about.length < 170 ? props.about : props.about.substring(0, 170) + ""}
             {controller ? props.about.substring(170) : null}
             {props.about.length > 170 ? <span onClick={handleClick} style={{color: "#fb743e"}}><b>{text}</b></span> : null}

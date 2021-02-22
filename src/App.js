@@ -11,9 +11,9 @@ import {
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/">
-          <Header />
           <BookList  /> 
         </Route>
         <Route exact path="/Payment">

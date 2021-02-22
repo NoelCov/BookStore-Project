@@ -11,15 +11,16 @@ body {
 /* NAV BAR */
 .nav-list {
     list-style: none;
-    color: white;
     margin-top: 5px;
 }
 
-.nav-list a {
-    margin: auto 45px;
+.nav-list-tag {
+    margin: auto 45px; 
+    color: "white"; 
+    font-size: "15";
 }
 
-/* Card Component */
+/* Book Component */
 
 .card-container {
     width: 80%;
@@ -69,7 +70,7 @@ body {
 
 img {
     height: 300px;
-    width: 300px;
+    width: auto;
 }
 
 /* About Component */
@@ -80,28 +81,27 @@ img {
 }
 
 /* Cart Component */
-.cartIcon {
+.cart-icon {
     position: fixed;
     right: 5px;
     bottom: 10px;
     color: black;
 }
 
-.cartIcon:hover {
+.cart-icon:hover {
     color: #5b5b5b;
 }
 
-.cartIcon p {
+.cart-icon p {
     position: fixed;
     bottom: 40px;
     right: 1.4rem;
     font-size: 30px;
 }
-
 /* Payment Component */
 
 .payment-container {
-    margin: 5rem 4rem;
+    margin: 10rem auto;
     text-align: center;
 }
 
@@ -126,4 +126,121 @@ h4 {
     width: 45%;
     margin: 0 auto 10px auto;
     line-height: 2;
+}
+
+.payment-card {
+    width: 30%;
+    background-color: #ffefa1;
+}
+
+
+
+@media only screen and (max-width: 440px){
+    /* Navbar Component */
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list-tag {
+        margin: 0 8px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    /* Book Component */
+    .btn {
+        left: 30px;
+    }
+
+    /* Booklist Component */
+    .col {
+        margin: 2rem auto 4rem; 
+    }
+
+    img {
+        height: 280px;
+        width: auto;
+    }
+
+    .card {
+        margin: 2rem auto;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin: 5px auto 0;
+        height: 35px;
+    }
+
+    .card-container {
+        width: auto;
+    }
+
+    .about-paragraph {
+        font-size: 15px;
+    }
+
+    /* Cart Component */
+
+    .cart-icon {
+        display: flex;
+        justify-content: center;
+        color: #28527a;
+    }
+    
+    .cart-icon p{
+        font-size: 18px;
+
+    }
+
+    /* Payment Component */
+
+    .payment-title {
+        font-size: 50px;
+    }
+
+    .payment-subtitle {
+        font-size: 20px;
+    }
+
+    .btn-container {
+        display: grid;
+        width: 80%;
+    }
+
+    .btn-container a {
+        margin: 10px auto;
+    }
+
+    .payment-h2 {
+        font-size: 20px;
+    }
+
+    .payment-card {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    /* BookList Component  */
+    .card-container {
+        width: auto;
+    }
+
+    .card {
+        margin: 2rem auto;
+    }
+
+    /* Payment Component */
+    .btn-container {
+        margin: 2rem auto;
+        width: 50%;
+    }
+    
+    .payment-card {
+        width: 60%;
+    }
 }
