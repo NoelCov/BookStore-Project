@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Cart(props) {
     return (
         <Link to="/payment">
-            <div className="cart-icon">
-            <p>{props.numberItems}</p>
-            <ShoppingCartIcon className="shopping-cart-icon" style={{ fontSize: 50}}/>
+            <div className="cart-container">
+                <p>{props.numberItems}</p>
+                <ShoppingCartIcon className="shopping-cart-icon" style={{ fontSize: 50}}/>
             </div>
         </Link>
 

@@ -1,23 +1,34 @@
 body {
     background-color: #f2a154;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-}
-
-.title {
-    color: white;
-    font-size: 30px;
 }
 
 /* NAV BAR */
 .nav-list {
     list-style: none;
-    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-list-tag {
-    margin: auto 45px; 
-    color: "white"; 
+.navbar-title {
+    color: white;
+    font-size: 30px;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
     font-size: "15";
+    margin: 0 20px;
+    color: white;
+}
+
+.nav-list a:hover {
+    color: gray;
 }
 
 /* Book Component */
@@ -81,33 +92,37 @@ img {
 }
 
 /* Cart Component */
-.cart-icon {
+.cart-container {
     position: fixed;
-    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
     bottom: 10px;
     color: black;
 }
 
-.cart-icon:hover {
-    color: #5b5b5b;
+.cart-container p {
+    font-size: 25px;
+    margin-bottom: 0;
 }
 
-.cart-icon p {
-    position: fixed;
-    bottom: 40px;
-    right: 1.4rem;
-    font-size: 30px;
+.cart-container:hover {
+    color: white;
 }
+
+
 /* Payment Component */
 
 .payment-container {
-    margin: 10rem auto;
+    margin: 6rem auto;
     text-align: center;
 }
 
 .payment-title {
     font-size: 80px;
-    margin-bottom: 1rem;
+    margin-bottom: 6rem;
 }
 
 h4 {
@@ -119,7 +134,8 @@ h4 {
     width: 20%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-container {
